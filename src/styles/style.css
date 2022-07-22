@@ -2,25 +2,31 @@
 
 @font-face {
     font-family: 'Open Sans';
-    src: url(fonts/OpenSans-Regular.ttf);
+    src: url(../fonts/OpenSans-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/OpenSans-Regular.ttf);
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'Open Sans';
-    src: url(fonts/OpenSans-Medium.ttf);
+    src: url(../fonts/OpenSans-Medium.ttf);
     font-weight: 600;
 }
 
 @font-face {
     font-family: 'Open Sans';
-    src: url(fonts/OpenSans-Bold.ttf);
+    src: url(../fonts/OpenSans-Bold.ttf);
     font-weight: 700;
 }
 
 @font-face {
     font-family: Neucha;
-    src: url(fonts/Neucha-Regular.ttf );
+    src: url(../fonts/Neucha-Regular.ttf );
     font-weight: 400;
 }
 
@@ -36,11 +42,26 @@
     --blue: #1085c5;
 }
 
+.main-light {
+    color: var(--main-light);
+}
+
+.dark {
+    color: var(--dark);
+}
+
+.white {
+    color: var(--white);
+}
+
 body {
     font-family: 'Open Sans';
     font-size: 16px;
     line-height: 1.6em;
     color: #2A2626;
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
 }
 
 h1,
@@ -51,6 +72,8 @@ h5,
 h6 {
     font-family: Neucha;
     line-height: 1.2em;
+    font-weight: 400;
+    margin-top: 0;
 }
 
 h1 {
@@ -59,19 +82,149 @@ h1 {
 
 h2 {
     font-size: 60px;
+    margin-bottom: 23px;
 }
 
 h3 {
     font-size: 34px;
 }
 
-section {
-    width: 1100px;
-    text-align: center;
-    padding: 100px 0;
+.btn {
+    padding: 12px 24px;
+    background: var(--main-light);
+    color: var(--white);
+    text-decoration: none;
+    top: 34px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 700
 }
 
-.hello {
-    display: block;
-    color: #fff;
+section {
+    width: 1110px;
+    text-align: center;
+    padding: 100px 0 100px 0;
+    margin: 0 auto;
+    position: relative;
+}
+
+.bg::before {
+    content: "";
+    background: url("../images/background.png");
+    background-color: var(--translucent-white);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header {
+    position: relative;
+}
+
+header img {
+    height: 525px;
+    position: absolute;
+    top: 55px;
+    right: -270px;
+    z-index: 1;
+}
+
+header h1 {
+    text-align: left;
+    z-index: 2;
+    position: relative;
+    top: 7px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    text-align: left;
+    padding-top: 199px
+}
+
+.item {
+    flex: 1 0 48%;
+}
+
+.item div {
+    margin-bottom: 15px;
+}
+
+.video-block {
+    position: relative;
+}
+
+.video {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+    z-index: 1
+}
+
+.navigation {
+    background-color: var(--main-dark);
+    position: relative;
+    top: 405px;
+    width: 100%
+}
+
+.container-nav {
+    display: flex;
+    gap: 20px 30px;
+    flex-wrap: wrap;
+}
+
+.item-nav {
+    flex: 1 1 27%;
+}
+
+h2.item-nav {
+    text-align: left;
+    font-size: 52px;
+    padding-top: 5px;
+    margin-bottom: 0px
+}
+
+div.item-nav {
+    background-color: var( --light);
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 24px;
+}
+
+div.item-nav>* {
+    padding-left: 24px;
+    padding-right: 24px
+}
+
+.number {
+    padding-bottom: 40px;
+    font-size: 64px;
+    font-family: Neucha;
+    line-height: 1
+}
+
+div.item-nav h3 {
+    color: var( --main-light);
+    margin: -3px 0 10px 0;
+}
+
+.item-nav p {
+    margin: 0
 }
