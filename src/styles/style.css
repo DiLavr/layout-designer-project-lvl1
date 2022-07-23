@@ -90,7 +90,7 @@ h3 {
 }
 
 .btn {
-    margin-top: 45px
+    margin-top: 50px
 }
 
 .btn a {
@@ -162,7 +162,7 @@ header img {
     position: absolute;
     top: 55px;
     right: -270px;
-    z-index: 1;
+    z-index: 2;
 }
 
 header h1 {
