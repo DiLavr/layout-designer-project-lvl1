@@ -239,6 +239,7 @@ h2.item-nav {
 a.item-nav {
   background-color: var(--light);
   text-align: left;
+
   padding-top: 30px;
   padding-bottom: 24px;
   color: var(--dark);
@@ -250,7 +251,7 @@ a.item-nav:hover {
   color: var(--white);
 }
 
-a.item-nav>* {
+a.item-nav > * {
   padding-left: 24px;
   padding-right: 24px;
 }
@@ -270,7 +271,7 @@ a.item-nav>* {
 
 a.item-nav h3 {
   color: var(--main-light);
-  margin: -3px 0 10px 0;
+  margin: -3px 0 10px;
 }
 
 a.item-nav:hover h3 {
