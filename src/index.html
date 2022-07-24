@@ -12,8 +12,8 @@
 
 <body>
     <!-- Начало шапки -->
-    <header class="bg-light">
-        <section class="header-section">
+    <header class="bg-light full-width">
+        <section class="section-container">
             <h1 class="main-light">Когнитивные <br> искажения <br> <span class="dark">в программировании</span></h1>
             <img src="images/main.png" alt="">
 
@@ -37,57 +37,62 @@
     </header>
     <!-- Конец шапки -->
     <!--Основная часть -->
-    <main>
+    <main class="full-width">
         <!--Видео Секция -->
-        <section class="video-section">
+        <section class="video-section section-container">
             <h2 class="dark">Что же это такое, <br> <span class="main-light">когнитивные искажения?</span></h2>
             <div>Что такое когнитивные искажения. Petrovna Channel</div>
             <div class="video-block">
-                <iframe class="video" width="919" height="569" src="https://www.youtube.com/embed/jie9AizBqss" frameborder="0" allowfullscreen></iframe>
+                <iframe class="video" width="919" height="569" src="https://www.youtube.com/embed/jie9AizBqss" style="border: 0" allowfullscreen></iframe>
             </div>
 
         </section>
 
         <!--Секция навигация-->
         <section id="navigation" class="full-width">
-            <section class="container-nav">
+            <div class="container-nav section-container">
+
                 <h2 class="item-nav"><span class="main-light">5 когнитивных <br>искажений </span><br> <span class="white">о существовании <br>которых стоит <br>помнить</span></h2>
-                <div class="item-nav">
+
+
+                <a href="#ikea-effect" class="item-nav">
                     <div class="number"> 1</div>
                     <h3>Эффект ИКЕА</h3>
                     <p>Вы переоцениваете собственные решения, и, как следствие, недооцениваете решения других.</p>
-                </div>
-                <div class="item-nav">
+                </a>
+
+
+                <a href="#premature-optimization" class="item-nav">
                     <div class="number"> 2</div>
                     <h3>Преждевременная оптимизация</h3>
                     <p>Вы оптимизируете что-то задолго до того, как в этом появляется необходимость.</p>
 
-                </div>
-                <div class="item-nav">
+                </a>
+                <a href="#distortion-of-novelty" class="item-nav">
                     <div class="number"> 3</div>
                     <h3>Искажение новизны</h3>
                     <p>Вы даёте более высокую оценку тем событиям, которые произошли недавно, и недооцениваете более старые.</p>
-                </div>
-                <div class="item-nav">
+                </a>
+                <a href="#hyperbolic-depreciation" class="item-nav">
                     <div class="number"> 4</div>
                     <h3>Гиперболическое обесценивание</h3>
                     <p>Вы гонитесь за немедленной маленькой выгодой и игнорируете более крупную, недоступную сейчас, но доступную в будущем.</p>
-                </div>
-                <div class="item-nav">
+                </a>
+                <a href="#errors-in-planning" class="item-nav">
                     <div class="number"> 5</div>
                     <h3>Ошибка планирования</h3>
                     <p>Неправильно рассчитывать время необходимое для завершения задачи.
 
 
                     </p>
-                </div>
-            </section>
+                </a>
+            </div>
         </section>
         <!--секция эффект икеа -->
         <section id="ikea-effect" class="bg-light full-width">
-            <section class="description-box">
+            <div class="description-box section-container">
 
-                <div class="left-side width55"><img src="images/1.png"></div>
+                <div class="left-side width55"><img src="images/1.png" alt=""></div>
                 <div class="right-side width45">
                     <p class="heading">Когнитивные искажения</p>
                     <h2>Эффект ИКЕА</h2>
@@ -108,12 +113,12 @@
                     </div>
                 </div>
 
-            </section>
+            </div>
         </section>
 
         <!--секция Преждевременная оптимизация -->
         <section id="premature-optimization" class="bg-dark full-width">
-            <section class="description-box">
+            <div class="description-box section-container">
 
                 <div class="left-side width45">
                     <p class="heading">Когнитивные искажения</p>
@@ -122,7 +127,7 @@
 
                 </div>
 
-                <div class="right-side width55"><img src="images/2.png"></div>
+                <div class="right-side width55"><img src="images/2.png" alt=""></div>
                 <div class="clear"></div>
 
                 <h4>Как проявляется</h4>
@@ -136,14 +141,14 @@
                     </div>
                 </div>
 
-            </section>
+            </div>
         </section>
 
         <!--секция ошибки новизны -->
         <section id="distortion-of-novelty" class="bg-light full-width">
-            <section class="description-box">
+            <div class="description-box section-container">
 
-                <div class="left-side width55"><img src="images/3.png"></div>
+                <div class="left-side width55"><img src="images/3.png" alt=""></div>
                 <div class="right-side width45">
                     <p class="heading">Когнитивные искажения</p>
                     <h2>Искажение новизны</h2>
@@ -163,12 +168,12 @@
                     </div>
                 </div>
 
-            </section>
+            </div>
         </section>
 
         <!--секция Гиперболическое обесценивание -->
         <section id="hyperbolic-depreciation" class="bg-dark full-width">
-            <section class="description-box">
+            <div class="description-box section-container">
 
                 <div class="left-side width45">
                     <p class="heading">Когнитивные искажения</p>
@@ -177,7 +182,7 @@
 
                 </div>
 
-                <div class="right-side width55"><img src="images/4.png"></div>
+                <div class="right-side width55"><img src="images/4.png" alt=""></div>
                 <div class="clear"></div>
 
                 <h4>Как проявляется</h4>
@@ -192,14 +197,14 @@
                     </div>
                 </div>
 
-            </section>
+            </div>
         </section>
 
         <!--секция Ошибка планирования -->
         <section id="errors-in-planning" class="bg-light full-width">
-            <section class="description-box">
+            <div class="description-box section-container">
 
-                <div class="left-side width55"><img src="images/5.png"></div>
+                <div class="left-side width55"><img src="images/5.png" alt=""></div>
                 <div class="right-side width45">
                     <p class="heading">Когнитивные искажения</p>
                     <h2>Ошибка планирования</h2>
@@ -219,13 +224,13 @@
                     </div>
                 </div>
 
-            </section>
+            </div>
         </section>
 
     </main>
     <footer>
 
-        <section>
+        <div class="section-container">
             <div class="form-section">
                 <div>
                     <h3>Хотите узнать больше?<br> Подпишитесь на обновления</h3>
@@ -245,7 +250,7 @@
                 <p>По материалам статьи <a href="https://medium.com/hackernoon/cognitive-biases-in-programming-5e937707c27b" target="_blank">Yash Ranadive Cognitive Biases in Programming</a></p>
                 <p><a href="https://ru.hexlet.io/?ref=209186" target="_blank">Курсы программирования Hexlet</a></p>
             </div>
-        </section>
+        </div>
 
     </footer>
 </body>
