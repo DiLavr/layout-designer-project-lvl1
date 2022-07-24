@@ -1,7 +1,7 @@
 /** CSS STYLE **/
 
 :root {
-  --white: #ffffff;
+  --white: #fff;
   --translucent-white: #d7ccc0;
   --light: #f5f4f0;
   --main-light: #fe8a02;
@@ -14,32 +14,32 @@
 
 @font-face {
   font-family: "Open Sans";
-  src: url(../fonts/OpenSans-Light.ttf);
   font-weight: 300;
+  src: url("../fonts/OpenSans-Light.ttf");
 }
 
 @font-face {
   font-family: "Open Sans";
-  src: url(../fonts/OpenSans-Regular.ttf);
   font-weight: 400;
+  src: url("../fonts/OpenSans-Regular.ttf");
 }
 
 @font-face {
   font-family: "Open Sans";
-  src: url(../fonts/OpenSans-Medium.ttf);
   font-weight: 600;
+  src: url("../fonts/OpenSans-Medium.ttf");
 }
 
 @font-face {
   font-family: "Open Sans";
-  src: url(../fonts/OpenSans-Bold.ttf);
   font-weight: 700;
+  src: url("../fonts/OpenSans-Bold.ttf");
 }
 
 @font-face {
   font-family: Neucha;
-  src: url(../fonts/Neucha-Regular.ttf);
   font-weight: 400;
+  src: url("../fonts/Neucha-Regular.ttf");
 }
 
 .main-light {
@@ -55,12 +55,12 @@
 }
 
 body {
-  font-family: "Open Sans";
   font-size: 16px;
-  line-height: 1.6em;
-  color: #2a2626;
-  padding: 0;
+  font-family: "Open Sans", sans-serif;
   margin: 0;
+  padding: 0;
+  color: #2a2626;
+  line-height: 1.6em;
   font-weight: 400;
 }
 
@@ -70,10 +70,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Neucha;
-  line-height: 1.2em;
-  font-weight: 400;
+  font-family: Neucha, sans-serif;
   margin-top: 0;
+  font-weight: 400;
+  line-height: 1.2em;
 }
 
 h1 {
@@ -81,8 +81,8 @@ h1 {
 }
 
 h2 {
-  font-size: 60px;
   margin-bottom: 23px;
+  font-size: 60px;
 }
 
 h3 {
@@ -95,11 +95,11 @@ h3 {
 
 .btn a {
   padding: 12px 24px;
-  background: var(--main-light);
   color: var(--white);
-  text-decoration: none;
-  text-transform: uppercase;
+  background: var(--main-light);
   font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .btn a:hover {
@@ -107,10 +107,10 @@ h3 {
 }
 
 .bg-light::before {
-  content: "";
   width: 100%;
-  height: 100%;
+  content: "";
   position: absolute;
+  height: 100%;
   background: url("../images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -118,15 +118,15 @@ h3 {
 }
 
 .bg-light {
-  background-color: var(--light);
   color: var(--dark);
+  background-color: var(--light);
 }
 
 .bg-dark::before {
-  content: "";
   width: 100%;
-  height: 100%;
+  content: "";
   position: absolute;
+  height: 100%;
   background: url("../images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -134,8 +134,8 @@ h3 {
 }
 
 .bg-dark {
-  background-color: var(--brown);
   color: var(--white);
+  background-color: var(--brown);
 }
 
 .container {
@@ -144,10 +144,10 @@ h3 {
 
 .section-container {
   width: 1110px;
-  text-align: center;
-  padding: 100px 0 100px 0;
-  margin: 0 auto;
   position: relative;
+  margin: 0 auto;
+  padding: 100px 0;
+  text-align: center;
 }
 
 header img {
@@ -163,15 +163,15 @@ header h1 {
   top: 7px;
 }
 
-header .column-container {
-  padding-top: 140px;
-}
-
 .column-container {
   display: flex;
   flex-wrap: wrap;
   column-gap: 30px;
   text-align: left;
+}
+
+header .column-container {
+  padding-top: 140px;
 }
 
 .item {
@@ -191,9 +191,7 @@ header .column-container {
   position: absolute;
   top: 30px;
   left: 0;
-  right: 0;
   bottom: 0;
-  left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
